@@ -1,0 +1,20 @@
+# build output
+build/
+app/build/
+.gradle/
+local.properties
+*.iml
+__pycache__/
+*.pyc
+
+# signing keys are NOT published - bring your own keystore/release.jks
+keystore/
+release/
+
+# produced APKs
+*.apk
+
+# scratch
+tmp/
+analysis/
+javac.*.args

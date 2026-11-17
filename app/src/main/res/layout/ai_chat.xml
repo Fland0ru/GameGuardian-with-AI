@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.fix.LinearLayout android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.fix.ScrollView android:id="@id/ai_scroll" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <android.fix.TextView android:textAppearance="@style/SmallText" android:id="@id/ai_transcript" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ai_hello" />
+    </android.fix.ScrollView>
+    <android.fix.EditText android:id="@id/ai_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/ai_input_hint" android:inputType="text" android:imeOptions="actionSend" />
+    <android.fix.LinearLayout android:orientation="horizontal" android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.fix.Button android:textSize="@dimen/button_text_size" android:id="@id/ai_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_settings" android:textAllCaps="false" />
+        <android.fix.Button android:textSize="@dimen/button_text_size" android:id="@id/ai_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_send" android:textAllCaps="false" />
+    </android.fix.LinearLayout>
+</android.fix.LinearLayout>
