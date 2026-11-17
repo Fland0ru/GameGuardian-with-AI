@@ -7,6 +7,7 @@
     <android.fix.EditText android:id="@id/ai_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/ai_input_hint" android:inputType="text" android:imeOptions="actionSend" />
     <android.fix.LinearLayout android:orientation="horizontal" android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <android.fix.Button android:textSize="@dimen/button_text_size" android:id="@id/ai_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_settings" android:textAllCaps="false" />
+        <android.fix.Button android:textSize="@dimen/button_text_size" android:id="@id/ai_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_history" android:textAllCaps="false" />
         <android.fix.Button android:textSize="@dimen/button_text_size" android:id="@id/ai_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_send" android:textAllCaps="false" />
     </android.fix.LinearLayout>
 </android.fix.LinearLayout>

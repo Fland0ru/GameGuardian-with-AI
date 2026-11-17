@@ -1344,4 +1344,11 @@ __app_name__ 的第一次启动，使用随机包名执行重新安装，不需�
     <string name="ai_key">API 密钥（可选）</string>
     <string name="ai_model">模型名称</string>
     <string name="ai_saved">已保存</string>
+    <string name="ai_history">历史</string>
+    <string name="ai_history_title">对话历史</string>
+    <string name="ai_new_chat">＋ 新对话</string>
+    <string name="ai_history_empty">（暂无保存的会话）</string>
+    <string name="ai_rename">重命名</string>
+    <string name="ai_delete">删除</string>
+    <string name="ai_rename_hint">对话标题</string>
 </resources>

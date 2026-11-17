@@ -852,6 +852,9 @@ public class Script extends luaj.lib.TwoArgFunction implements luaj.lib.e {
         luaTable.c2("aiRequest", new android.ext.Script$aiRequest());
         luaTable.c2("aiWaitUser", new android.ext.Script$aiWaitUser());
         luaTable.c2("aiShow", new android.ext.Script$aiShow());
+        luaTable.c2("aiSave", new android.ext.Script$aiSave());
+        luaTable.c2("aiLoad", new android.ext.Script$aiLoad());
+        luaTable.c2("aiClear", new android.ext.Script$aiClear());
         android.ext.Script$getResultsCount script$getResultsCount = new android.ext.Script$getResultsCount();
         luaTable.c2("getResultsCount", script$getResultsCount);
         luaTable.c2("getResults", new android.ext.Script$getResults(this));

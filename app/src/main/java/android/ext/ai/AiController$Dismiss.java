@@ -10,6 +10,8 @@ class AiController$Dismiss implements android.content.DialogInterface.OnDismissL
 
     @Override // android.content.DialogInterface.OnDismissListener
     public void onDismiss(android.content.DialogInterface dialogInterface) {
-        this.f1.shutdown();
+        /* Keep the assistant script and its queue alive: only detach the views,
+           so reopening is instant and in-flight replies still complete and get saved. */
+        this.f1.detachViews();
     }
 }

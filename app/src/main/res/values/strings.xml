@@ -1868,4 +1868,11 @@ __wrong_float2__"</string>
     <string name="ai_key">API key (optional)</string>
     <string name="ai_model">Model name</string>
     <string name="ai_saved">Saved</string>
+    <string name="ai_history">History</string>
+    <string name="ai_history_title">Chat history</string>
+    <string name="ai_new_chat">+ New chat</string>
+    <string name="ai_history_empty">(no saved sessions)</string>
+    <string name="ai_rename">Rename</string>
+    <string name="ai_delete">Delete</string>
+    <string name="ai_rename_hint">Chat title</string>
 </resources>

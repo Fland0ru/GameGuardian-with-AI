@@ -354,4 +354,6 @@
     <item type="id" name="ai_url" />
     <item type="id" name="ai_key" />
     <item type="id" name="ai_model" />
+    <item type="id" name="ai_history" />
+    <item type="id" name="ai_rename_input" />
 </resources>
