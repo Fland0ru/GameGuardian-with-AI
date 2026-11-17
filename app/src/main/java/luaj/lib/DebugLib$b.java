@@ -289,10 +289,12 @@ public class DebugLib$b {
                     i = i2;
                 } else {
                     stringBuffer.append("\n\t[Java]: in ?");
+                    break;
                 }
             }
         } catch (java.lang.Throwable th_c_c_c) {
             throw th_c_c_c;
         }
+        return stringBuffer.toString();
     }
 }
