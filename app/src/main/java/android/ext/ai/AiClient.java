@@ -66,7 +66,20 @@ public final class AiClient {
             } finally {
                 inputStream.close();
             }
-            org.json.JSONObject jSONObjectResponse = new org.json.JSONObject(new java.lang.String(byteArrayOutputStream.toByteArray(), "UTF-8"));
+            org.json.JSONObject jSONObjectResponse = null;
+            java.lang.String strParseProblem = null;
+            try {
+                jSONObjectResponse = new org.json.JSONObject(new java.lang.String(byteArrayOutputStream.toByteArray(), "UTF-8"));
+            } catch (org.json.JSONException e3) {
+                strParseProblem = e3.getMessage();
+            }
+            if (jSONObjectResponse == null) {
+                java.lang.String strPreview = new java.lang.String(byteArrayOutputStream.toByteArray(), "UTF-8").replaceAll("\\s+", " ");
+                if (strPreview.length() > 160) {
+                    strPreview = strPreview.substring(0, 160) + "…";
+                }
+                throw new java.io.IOException("HTTP " + iCode + ": not JSON (is the base URL correct?). Body: " + strPreview + (strParseProblem != null ? " — " + strParseProblem : ""));
+            }
             if (jSONObjectResponse.has("error")) {
                 java.lang.Object objError = jSONObjectResponse.get("error");
                 java.lang.String strMessage = objError instanceof org.json.JSONObject ? ((org.json.JSONObject) objError).optString("message", "") : objError.toString();
